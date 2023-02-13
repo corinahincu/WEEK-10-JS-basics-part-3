@@ -1,0 +1,56 @@
+<script>
+  // DATA 
+  const PIN   = "1234"   // why not NUMBER? cand lucram cu numere care au zero in fata, sunt interpretate diferit, sau le transforma in sistemul octal, sau pur si simplu le elimina din fata !!!
+  // stringul pastreaza exact ordinea in care sunt scrise elementele.
+
+  let pin     = ""
+  let tries   = 0
+  let balance = 100000.00
+
+  while(true){
+    
+    pin = prompt("ENTER PIN: ")
+
+    tries++
+
+    if(pin == PIN){
+      
+      // ///////////////////////
+      alert(`
+          ACCESS GRANTED!!!\n\n
+          your balance: ${balance}MDL
+      `)
+      let money = +prompt("WITHDRAW: ?")
+      // HW1: upgrade - check balance
+      // HW2: max money = 50000.00
+      //balance -= money
+
+      if(money > 100000.00) {
+        alert(`You don't have enough money!!!`)
+
+      } else if(money > 50000.00) {
+        alert(`Cash withdrawal limit is 50000.00 MDL!`)
+
+      } else {
+        balance -= money
+        alert(`
+          SUCCESS!!\n\n
+          your balance: ${balance}MDL
+        
+      `)
+        break
+      }
+      
+      // ///////////////////////
+      
+    } else {
+      alert("WRONG PIN!!!")
+      if(tries == 3){
+        alert("CARD BLOCKED!!!")
+        break // force stop
+      }
+    }
+    
+  }
+  
+</script>

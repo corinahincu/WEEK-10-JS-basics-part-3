@@ -1,0 +1,36 @@
+<!--  
+  album of 9 pictures
+
+  for ( start ; expression ; step ) {
+    code_to_repeat
+  }
+
+  while:
+  start
+  while(expression) {
+    code_to_repeat
+    step
+  }
+-->
+
+<script>
+
+  // use variable "i"
+  
+  
+  for( let i = 1; i <= 9; i ++) {
+    document.write(`<!-- ${i} start -->`)
+    document.write(`
+    <img src="images/${i}-300x300.jpg" >
+    `)
+  
+    if(i == 3 || i == 6) {
+      document.write(`<br>`)
+    }
+  
+    document.write(`<!-- ${i} end -->`)
+    
+  
+  }
+  </script>
+  
