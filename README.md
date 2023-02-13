@@ -28,3 +28,7 @@ looping while pin code
 
 function first encounter
 ![image](https://user-images.githubusercontent.com/117738625/218533771-78f736e0-6cc3-4bdc-bb31-819d1ba3f00f.png)
+
+1d robot game
+![image](https://user-images.githubusercontent.com/117738625/218586618-cfd34064-7a59-464d-9aa7-a24c5f6aa46f.png)
+
